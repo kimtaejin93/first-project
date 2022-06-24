@@ -19,10 +19,12 @@ function game(){
 
 
   if(random>user_number.value){
-    Bull.textContent="up";
+    Bull.textContent="UP";
+    Bull.style.fontSize="50px"
   }
   else if(random<user_number.value){
-    Bull.textContent="down";
+    Bull.textContent="DOWN";
+    Bull.style.fontSize="50px"
 }
 else{
   Bull.textContent="정답";
