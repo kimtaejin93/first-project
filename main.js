@@ -32,9 +32,10 @@ else{
 } 
 life--;
 left.textContent=`현재 남은 목숨은 ${life} 입니다.`
-if(life==0){
+if(life==0&&random!=user_number.value){
   go_button.disabled=true;
   Bull.textContent="Game Over";
+  left.textContent="재도전하시려면 RESET을 눌러주세요"
 }
 }
 function random_number(){
